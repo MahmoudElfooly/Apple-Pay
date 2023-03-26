@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazon:fortpayment:2.1.0:release@aar" type="AndroidModuleLibraryType">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/087e3e982a085009b2c173869c081095/transformed/jetified-fortpayment-2.1.0-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/087e3e982a085009b2c173869c081095/transformed/jetified-fortpayment-2.1.0-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
