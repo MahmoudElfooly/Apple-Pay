@@ -10,6 +10,8 @@ class SdkTokenResponse {
     this.accessCode,
     this.language,
     this.status,
+    this.tokenName,
+    this.paymentOption,
   });
 
   String? responseCode;
@@ -22,6 +24,9 @@ class SdkTokenResponse {
   String? accessCode;
   String? language;
   String? status;
+  String? tokenName;
+  String? paymentOption;
+
 
   factory SdkTokenResponse.fromMap(Map<String, dynamic> data) {
     return SdkTokenResponse(
@@ -35,6 +40,8 @@ class SdkTokenResponse {
       accessCode: data['access_code'],
       language: data['language'],
       status: data['status'],
+      tokenName: data['token_name'],
+      paymentOption: data['payment_option'],
     );
   }
 
@@ -50,6 +57,8 @@ class SdkTokenResponse {
       'access_code': accessCode,
       'language': language,
       'status': status,
+      'token_name': tokenName,
+      'payment_option': paymentOption,
     };
   }
 }
