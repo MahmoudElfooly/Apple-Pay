@@ -441,12 +441,7 @@ class _$_FortRequest extends _FortRequest {
     string phoneNumberString =
         phoneNumber == null ? '' : ',phoneNumber: $phoneNumber';
 
-    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken , currency: $currency, language: $language, merchantReference: $merchantReference,  eci: $eci , merchant_extra1: $merchantExtra1 ' +
-        customerIpString +
-        paymentOptionString +
-        tokenNameString +
-        phoneNumberString +
-        ')';
+    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken , currency: $currency, language: $language, merchantReference: $merchantReference,  eci: $eci , merchant_extra1: $merchantExtra1 )';
   }
 
   @override
