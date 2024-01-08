@@ -434,7 +434,7 @@ class _$_FortRequest extends _FortRequest {
   @override
   String toString() {
     String customerIpString =
-        customerIp == null ? '' : ',customerIp: $customerIp';
+        customerIp == null ? ' ' : ',customerIp: $customerIp';
     String paymentOptionString =
         paymentOption == null ? '' : ',paymentOption: $paymentOption';
 
@@ -442,7 +442,7 @@ class _$_FortRequest extends _FortRequest {
     String phoneNumberString =
         phoneNumber == null ? '' : ',phoneNumber: $phoneNumber';
 
-    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken , currency: $currency, language: $language, merchantReference: $merchantReference,  eci: $eci , merchant_extra1: $merchantExtra1 $customerIp $paymentOption $phoneNumber $tokenName ';
+    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken , currency: $currency, language: $language, merchantReference: $merchantReference,  eci: $eci , merchant_extra1: $merchantExtra1 ) ';
   }
 
   @override
