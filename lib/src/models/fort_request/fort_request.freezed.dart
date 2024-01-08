@@ -433,12 +433,16 @@ class _$_FortRequest extends _FortRequest {
   final String? merchantExtra1;
   @override
   String toString() {
-    String customerIpString = customerIp ==null ? '' : ',customerIp: $customerIp';
-    String paymentOptionString = paymentOption ==null ? '' : ',paymentOption: $paymentOption';
-    String tokenNameString = tokenName ==null ? '' :String.fromCharCode(charCode) ',tokenName: $tokenName';
-    String phoneNumberString = phoneNumber ==null ? '' : ',phoneNumber: $phoneNumber';
+    String customerIpString =
+        customerIp == null ? '' : ',customerIp: $customerIp';
+    String paymentOptionString =
+        paymentOption == null ? '' : ',paymentOption: $paymentOption';
 
-    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken , currency: $currency, language: $language, merchantReference: $merchantReference,  eci: $eci , merchant_extra1: $merchantExtra1 ' + customerIpString + paymentOptionString + tokenNameString + phoneNumberString + ')';
+    String tokenNameString = tokenName == null ? '' : ',tokenName: $tokenName';
+    String phoneNumberString =
+        phoneNumber == null ? '' : ',phoneNumber: $phoneNumber';
+
+    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken , currency: $currency, language: $language, merchantReference: $merchantReference,  eci: $eci , merchant_extra1: $merchantExtra1 $customerIp $paymentOption $phoneNumber $tokenName ';
   }
 
   @override
