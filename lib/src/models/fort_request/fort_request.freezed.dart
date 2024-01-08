@@ -86,10 +86,11 @@ mixin _$FortRequest {
   ///
   @JsonKey(name: 'phone_number')
   String? get phoneNumber => throw _privateConstructorUsedError;
+
   /// The Booking Data.
   ///
   @JsonKey(name: 'merchant_extra1')
-  String? get  merchantExtra1=> throw _privateConstructorUsedError;
+  String? get merchantExtra1 => throw _privateConstructorUsedError;
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $FortRequestCopyWith<FortRequest> get copyWith =>
@@ -203,7 +204,7 @@ class _$FortRequestCopyWithImpl<$Res, $Val extends FortRequest>
       merchantExtra1: freezed == merchantExtra1
           ? _value.merchantExtra1
           : merchantExtra1 // ignore: cast_nullable_to_non_nullable
-      as String?,
+              as String?,
     ) as $Val);
   }
 }
@@ -222,7 +223,7 @@ abstract class _$$_FortRequestCopyWith<$Res>
       @JsonKey(name: 'customer_email') String customerEmail,
       @JsonKey(name: 'order_description') String orderDescription,
       @JsonKey(name: 'sdk_token') String sdkToken,
-      @JsonKey(name: 'customer_ip') String customerIp,
+      @JsonKey(name: 'customer_ip') String? customerIp,
       String currency,
       String language,
       @JsonKey(name: 'merchant_reference') String merchantReference,
@@ -230,8 +231,7 @@ abstract class _$$_FortRequestCopyWith<$Res>
       @JsonKey(name: 'payment_option') String? paymentOption,
       String? eci,
       @JsonKey(name: 'phone_number') String? phoneNumber,
-      @JsonKey(name: 'merchant_extra1') String? merchantExtra1
-      });
+      @JsonKey(name: 'merchant_extra1') String? merchantExtra1});
 }
 
 /// @nodoc
@@ -316,7 +316,7 @@ class __$$_FortRequestCopyWithImpl<$Res>
       merchantExtra1: freezed == merchantExtra1
           ? _value.merchantExtra1
           : merchantExtra1 // ignore: cast_nullable_to_non_nullable
-      as String?,
+              as String?,
     ));
   }
 }
@@ -338,9 +338,7 @@ class _$_FortRequest extends _FortRequest {
       @JsonKey(name: 'payment_option') this.paymentOption,
       this.eci,
       @JsonKey(name: 'phone_number') this.phoneNumber,
-        @JsonKey(name: 'merchant_extra1') this.merchantExtra1
-
-      })
+      @JsonKey(name: 'merchant_extra1') this.merchantExtra1})
       : super._();
 
   factory _$_FortRequest.fromJson(Map<String, dynamic> json) =>
@@ -427,6 +425,7 @@ class _$_FortRequest extends _FortRequest {
   @override
   @JsonKey(name: 'phone_number')
   final String? phoneNumber;
+
   /// Booking Data.
   ///
   @override
@@ -465,10 +464,9 @@ class _$_FortRequest extends _FortRequest {
                 other.paymentOption == paymentOption) &&
             (identical(other.eci, eci) || other.eci == eci) &&
             (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber)&&
+                other.phoneNumber == phoneNumber) &&
             (identical(other.merchantExtra1, merchantExtra1) ||
-                other.merchantExtra1 == merchantExtra1)
-        );
+                other.merchantExtra1 == merchantExtra1));
   }
 
   @JsonKey(ignore: true)
@@ -506,32 +504,23 @@ class _$_FortRequest extends _FortRequest {
 
 abstract class _FortRequest extends FortRequest {
   const factory _FortRequest(
-      {@NumOrStringConverter()
-          required final num amount,
-      @JsonKey(name: 'customer_name')
-          required final String customerName,
-      @JsonKey(name: 'customer_email')
-          required final String customerEmail,
-      @JsonKey(name: 'order_description')
+          {@NumOrStringConverter() required final num amount,
+          @JsonKey(name: 'customer_name') required final String customerName,
+          @JsonKey(name: 'customer_email') required final String customerEmail,
+          @JsonKey(name: 'order_description')
           required final String orderDescription,
-      @JsonKey(name: 'sdk_token')
-          required final String sdkToken,
-      @JsonKey(name: 'customer_ip')
-          required final String customerIp,
-      final String currency,
-      final String language,
-      @JsonKey(name: 'merchant_reference')
+          @JsonKey(name: 'sdk_token') required final String sdkToken,
+          @JsonKey(name: 'customer_ip') final String? customerIp,
+          final String currency,
+          final String language,
+          @JsonKey(name: 'merchant_reference')
           required final String merchantReference,
-      @JsonKey(name: 'token_name')
-          final String? tokenName,
-      @JsonKey(name: 'payment_option')
-          final String? paymentOption,
-      final String? eci,
-      @JsonKey(name: 'phone_number')
-          final String? phoneNumber,
-        @JsonKey(name: 'merchant_extra1')
-        final String? merchantExtra1
-      }) = _$_FortRequest;
+          @JsonKey(name: 'token_name') final String? tokenName,
+          @JsonKey(name: 'payment_option') final String? paymentOption,
+          final String? eci,
+          @JsonKey(name: 'phone_number') final String? phoneNumber,
+          @JsonKey(name: 'merchant_extra1') final String? merchantExtra1}) =
+      _$_FortRequest;
   const _FortRequest._() : super._();
 
   factory _FortRequest.fromJson(Map<String, dynamic> json) =
@@ -618,6 +607,7 @@ abstract class _FortRequest extends FortRequest {
   @JsonKey(name: 'phone_number')
   String? get phoneNumber;
   @override
+
   /// Booking Data.
   ///
   @JsonKey(name: 'merchant_extra1')
