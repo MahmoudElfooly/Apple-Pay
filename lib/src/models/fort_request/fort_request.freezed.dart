@@ -381,7 +381,7 @@ class _$_FortRequest extends _FortRequest {
   ///
   @override
   @JsonKey(name: 'customer_ip')
-  final String customerIp;
+  final String? customerIp;
 
   /// The currency of the transaction’s amount in ISO code 3. Example: AED, USD, EUR, GBP.
   /// By Default currency : [USD].
@@ -564,7 +564,7 @@ abstract class _FortRequest extends FortRequest {
   /// We support IPv4 and IPv6 as shown in the example below.
   ///
   @JsonKey(name: 'customer_ip')
-  String get customerIp;
+  String? get customerIp;
   @override
 
   /// The currency of the transaction’s amount in ISO code 3. Example: AED, USD, EUR, GBP.
