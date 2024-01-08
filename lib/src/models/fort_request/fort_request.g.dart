@@ -6,23 +6,23 @@ part of 'fort_request.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-// _$_FortRequest _$$_FortRequestFromJson(Map<String, dynamic> json) =>
-//     _$_FortRequest(
-//       amount: const NumOrStringConverter().fromJson(json['amount'] as String),
-//       customerName: json['customer_name'] as String,
-//       customerEmail: json['customer_email'] as String,
-//       orderDescription: json['order_description'] as String,
-//       sdkToken: json['sdk_token'] as String,
-//      customerIp: json['customer_ip'] as String?,
-//       currency: json['currency'] as String? ?? 'USD',
-//       language: json['language'] as String? ?? 'en',
-//       merchantReference: json['merchant_reference'] as String,
-//       tokenName: json['token_name'] as String?,
-//       paymentOption: json['payment_option'] as String?,
-//       eci: json['eci'] as String?,
-//       phoneNumber: json['phone_number'] as String?,
-//       merchantExtra1: json['merchant_extra1'] as String?,
-//     );
+_$_FortRequest _$$_FortRequestFromJson(Map<String, dynamic> json) =>
+    _$_FortRequest(
+      amount: const NumOrStringConverter().fromJson(json['amount'] as String),
+      customerName: json['customer_name'] as String,
+      customerEmail: json['customer_email'] as String,
+      orderDescription: json['order_description'] as String,
+      sdkToken: json['sdk_token'] as String,
+      customerIp: json['customer_ip'] as String?,
+      currency: json['currency'] as String? ?? 'USD',
+      language: json['language'] as String? ?? 'en',
+      merchantReference: json['merchant_reference'] as String,
+      tokenName: json['token_name'] as String?,
+      paymentOption: json['payment_option'] as String?,
+      eci: json['eci'] as String?,
+      phoneNumber: json['phone_number'] as String?,
+      merchantExtra1: json['merchant_extra1'] as String?,
+    );
 
 Map<String, dynamic> _$$_FortRequestToJson(_$_FortRequest instance) =>
     <String, dynamic>{

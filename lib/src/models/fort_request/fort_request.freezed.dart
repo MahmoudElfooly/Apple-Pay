@@ -433,7 +433,7 @@ class _$_FortRequest extends _FortRequest {
   final String? merchantExtra1;
   @override
   String toString() {
-    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken, customerIp: $customerIp, currency: $currency, language: $language, merchantReference: $merchantReference, tokenName: $tokenName, paymentOption: $paymentOption, eci: $eci, phoneNumber: $phoneNumber, merchant_extra1: $merchantExtra1)';
+    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken,  currency: $currency, language: $language, merchantReference: $merchantReference,   eci: $eci,  merchant_extra1: $merchantExtra1)';
   }
 
   @override
