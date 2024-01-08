@@ -51,7 +51,7 @@ mixin _$FortRequest {
   /// We support IPv4 and IPv6 as shown in the example below.
   ///
   @JsonKey(name: 'customer_ip')
-  String get customerIp => throw _privateConstructorUsedError;
+  String? get customerIp => throw _privateConstructorUsedError;
 
   /// The currency of the transaction’s amount in ISO code 3. Example: AED, USD, EUR, GBP.
   /// By Default currency : [USD].
