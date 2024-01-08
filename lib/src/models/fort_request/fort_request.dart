@@ -34,7 +34,7 @@ class FortRequest with _$FortRequest {
     /// It’s Mandatory, if the fraud service is active.
     /// We support IPv4 and IPv6 as shown in the example below.
     ///
-    @JsonKey(name: 'customer_ip') required String? customerIp,
+    @JsonKey(name: 'customer_ip')  String? customerIp,
 
     /// The currency of the transaction’s amount in ISO code 3. Example: AED, USD, EUR, GBP.
     /// By Default currency : [USD].
