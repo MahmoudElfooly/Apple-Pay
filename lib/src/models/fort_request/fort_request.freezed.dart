@@ -138,7 +138,7 @@ class _$FortRequestCopyWithImpl<$Res, $Val extends FortRequest>
     Object? customerEmail = null,
     Object? orderDescription = null,
     Object? sdkToken = null,
-    Object? customerIp = null,
+    Object? customerIp = freezed,
     Object? currency = null,
     Object? language = null,
     Object? merchantReference = null,
@@ -169,10 +169,10 @@ class _$FortRequestCopyWithImpl<$Res, $Val extends FortRequest>
           ? _value.sdkToken
           : sdkToken // ignore: cast_nullable_to_non_nullable
               as String,
-      customerIp: null == customerIp
+      customerIp: freezed == customerIp
           ? _value.customerIp
           : customerIp // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       currency: null == currency
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
@@ -250,7 +250,7 @@ class __$$_FortRequestCopyWithImpl<$Res>
     Object? customerEmail = null,
     Object? orderDescription = null,
     Object? sdkToken = null,
-    Object? customerIp = null,
+    Object? customerIp = freezed,
     Object? currency = null,
     Object? language = null,
     Object? merchantReference = null,
@@ -281,10 +281,10 @@ class __$$_FortRequestCopyWithImpl<$Res>
           ? _value.sdkToken
           : sdkToken // ignore: cast_nullable_to_non_nullable
               as String,
-      customerIp: null == customerIp
+      customerIp: freezed == customerIp
           ? _value.customerIp
           : customerIp // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       currency: null == currency
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
@@ -330,7 +330,7 @@ class _$_FortRequest extends _FortRequest {
       @JsonKey(name: 'customer_email') required this.customerEmail,
       @JsonKey(name: 'order_description') required this.orderDescription,
       @JsonKey(name: 'sdk_token') required this.sdkToken,
-      @JsonKey(name: 'customer_ip') required this.customerIp,
+      @JsonKey(name: 'customer_ip') this.customerIp,
       this.currency = 'USD',
       this.language = 'en',
       @JsonKey(name: 'merchant_reference') required this.merchantReference,
