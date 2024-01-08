@@ -1,6 +1,6 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=/Users/mahmoudelfooly/Development/flutter
-FLUTTER_APPLICATION_PATH=/Users/mahmoudelfooly/flutter-apps/apple_pay_edtiting/amazon_payfort-0.0.8/example
+FLUTTER_ROOT=/Users/Elfooly/Development/flutter
+FLUTTER_APPLICATION_PATH=/Users/Elfooly/flutter-apps/apple_pay_edtiting/amazon_payfort-0.0.8/example
 COCOAPODS_PARALLEL_CODE_SIGN=true
 FLUTTER_TARGET=lib/main.dart
 FLUTTER_BUILD_DIR=build
