@@ -108,7 +108,7 @@ abstract class $FortRequestCopyWith<$Res> {
       @JsonKey(name: 'customer_email') String customerEmail,
       @JsonKey(name: 'order_description') String orderDescription,
       @JsonKey(name: 'sdk_token') String sdkToken,
-      @JsonKey(name: 'customer_ip') String customerIp,
+      @JsonKey(name: 'customer_ip') String? customerIp,
       String currency,
       String language,
       @JsonKey(name: 'merchant_reference') String merchantReference,

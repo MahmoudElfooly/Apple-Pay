@@ -13,7 +13,7 @@ _$_FortRequest _$$_FortRequestFromJson(Map<String, dynamic> json) =>
       customerEmail: json['customer_email'] as String,
       orderDescription: json['order_description'] as String,
       sdkToken: json['sdk_token'] as String,
-      customerIp: json['customer_ip'] as String,
+      customerIp: json['customer_ip'] as String?,
       currency: json['currency'] as String? ?? 'USD',
       language: json['language'] as String? ?? 'en',
       merchantReference: json['merchant_reference'] as String,
