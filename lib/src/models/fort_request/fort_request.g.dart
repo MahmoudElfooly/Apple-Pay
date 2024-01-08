@@ -21,8 +21,7 @@ _$_FortRequest _$$_FortRequestFromJson(Map<String, dynamic> json) =>
       paymentOption: json['payment_option'] as String?,
       eci: json['eci'] as String?,
       phoneNumber: json['phone_number'] as String?,
-          merchantExtra1: json['merchant_extra1'] as String?,
-
+      merchantExtra1: json['merchant_extra1'] as String?,
     );
 
 Map<String, dynamic> _$$_FortRequestToJson(_$_FortRequest instance) =>
@@ -32,13 +31,14 @@ Map<String, dynamic> _$$_FortRequestToJson(_$_FortRequest instance) =>
       'customer_email': instance.customerEmail,
       'order_description': instance.orderDescription,
       'sdk_token': instance.sdkToken,
-      'customer_ip': instance.customerIp,
+      if (instance.customerIp != null) 'customer_ip': instance.customerIp,
       'currency': instance.currency,
       'language': instance.language,
       'merchant_reference': instance.merchantReference,
-      'token_name': instance.tokenName,
-      'payment_option': instance.paymentOption,
+      if (instance.tokenName != null) 'token_name': instance.tokenName,
+      if (instance.paymentOption != null)
+        'payment_option': instance.paymentOption,
       'eci': instance.eci,
-      'phone_number': instance.phoneNumber, 
-          'merchant_extra1':instance.merchantExtra1,
+      if (instance.phoneNumber != null) 'phone_number': instance.phoneNumber,
+      'merchant_extra1': instance.merchantExtra1,
     };
