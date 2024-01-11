@@ -50,8 +50,8 @@ mixin _$FortRequest {
   /// It’s Mandatory, if the fraud service is active.
   /// We support IPv4 and IPv6 as shown in the example below.
   ///
-  @JsonKey(name: 'customer_ip')
-  String? get customerIp => throw _privateConstructorUsedError;
+  // @JsonKey(name: 'customer_ip')
+  // String? get customerIp => throw _privateConstructorUsedError;
 
   /// The currency of the transaction’s amount in ISO code 3. Example: AED, USD, EUR, GBP.
   /// By Default currency : [USD].
@@ -70,13 +70,13 @@ mixin _$FortRequest {
 
   /// The Token received from the Tokenization process..
   ///
-  @JsonKey(name: 'token_name')
-  String? get tokenName => throw _privateConstructorUsedError;
+  // @JsonKey(name: 'token_name')
+  // String? get tokenName => throw _privateConstructorUsedError;
 
   /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
   ///
-  @JsonKey(name: 'payment_option')
-  String? get paymentOption => throw _privateConstructorUsedError;
+  // @JsonKey(name: 'payment_option')
+  // String? get paymentOption => throw _privateConstructorUsedError;
 
   /// The E-commerce indicator. example: [ECOMMERCE]
   ///
@@ -84,8 +84,8 @@ mixin _$FortRequest {
 
   /// The customer’s phone number.
   ///
-  @JsonKey(name: 'phone_number')
-  String? get phoneNumber => throw _privateConstructorUsedError;
+  // @JsonKey(name: 'phone_number')
+  // String? get phoneNumber => throw _privateConstructorUsedError;
 
   /// The Booking Data.
   ///
@@ -109,14 +109,14 @@ abstract class $FortRequestCopyWith<$Res> {
       @JsonKey(name: 'customer_email') String customerEmail,
       @JsonKey(name: 'order_description') String orderDescription,
       @JsonKey(name: 'sdk_token') String sdkToken,
-      @JsonKey(name: 'customer_ip') String? customerIp,
+      // @JsonKey(name: 'customer_ip') String? customerIp,
       String currency,
       String language,
       @JsonKey(name: 'merchant_reference') String merchantReference,
-      @JsonKey(name: 'token_name') String? tokenName,
-      @JsonKey(name: 'payment_option') String? paymentOption,
+      // @JsonKey(name: 'token_name') String? tokenName,
+      // @JsonKey(name: 'payment_option') String? paymentOption,
       String? eci,
-      @JsonKey(name: 'phone_number') String? phoneNumber,
+      // @JsonKey(name: 'phone_number') String? phoneNumber,
       @JsonKey(name: 'merchant_extra1') String? merchantExtra1});
 }
 
@@ -138,14 +138,14 @@ class _$FortRequestCopyWithImpl<$Res, $Val extends FortRequest>
     Object? customerEmail = null,
     Object? orderDescription = null,
     Object? sdkToken = null,
-    Object? customerIp = freezed,
+    // Object? customerIp = freezed,
     Object? currency = null,
     Object? language = null,
     Object? merchantReference = null,
-    Object? tokenName = freezed,
-    Object? paymentOption = freezed,
+    // Object? tokenName = freezed,
+    // Object? paymentOption = freezed,
     Object? eci = freezed,
-    Object? phoneNumber = freezed,
+    // Object? phoneNumber = freezed,
     Object? merchantExtra1 = freezed,
   }) {
     return _then(_value.copyWith(
@@ -169,10 +169,10 @@ class _$FortRequestCopyWithImpl<$Res, $Val extends FortRequest>
           ? _value.sdkToken
           : sdkToken // ignore: cast_nullable_to_non_nullable
               as String,
-      customerIp: freezed == customerIp
-          ? _value.customerIp
-          : customerIp // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // customerIp: freezed == customerIp
+      //     ? _value.customerIp
+      //     : customerIp // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       currency: null == currency
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
@@ -185,22 +185,22 @@ class _$FortRequestCopyWithImpl<$Res, $Val extends FortRequest>
           ? _value.merchantReference
           : merchantReference // ignore: cast_nullable_to_non_nullable
               as String,
-      tokenName: freezed == tokenName
-          ? _value.tokenName
-          : tokenName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      paymentOption: freezed == paymentOption
-          ? _value.paymentOption
-          : paymentOption // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // tokenName: freezed == tokenName
+      //     ? _value.tokenName
+      //     : tokenName // ignore: cast_nullable_to_non_nullable
+      //         as String?,
+      // paymentOption: freezed == paymentOption
+      //     ? _value.paymentOption
+      //     : paymentOption // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       eci: freezed == eci
           ? _value.eci
           : eci // ignore: cast_nullable_to_non_nullable
               as String?,
-      phoneNumber: freezed == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // phoneNumber: freezed == phoneNumber
+      //     ? _value.phoneNumber
+      //     : phoneNumber // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       merchantExtra1: freezed == merchantExtra1
           ? _value.merchantExtra1
           : merchantExtra1 // ignore: cast_nullable_to_non_nullable
@@ -223,14 +223,14 @@ abstract class _$$_FortRequestCopyWith<$Res>
       @JsonKey(name: 'customer_email') String customerEmail,
       @JsonKey(name: 'order_description') String orderDescription,
       @JsonKey(name: 'sdk_token') String sdkToken,
-      @JsonKey(name: 'customer_ip') String? customerIp,
+      // @JsonKey(name: 'customer_ip') String? customerIp,
       String currency,
       String language,
       @JsonKey(name: 'merchant_reference') String merchantReference,
-      @JsonKey(name: 'token_name') String? tokenName,
-      @JsonKey(name: 'payment_option') String? paymentOption,
+      // @JsonKey(name: 'token_name') String? tokenName,
+      // @JsonKey(name: 'payment_option') String? paymentOption,
       String? eci,
-      @JsonKey(name: 'phone_number') String? phoneNumber,
+      // @JsonKey(name: 'phone_number') String? phoneNumber,
       @JsonKey(name: 'merchant_extra1') String? merchantExtra1});
 }
 
@@ -250,14 +250,14 @@ class __$$_FortRequestCopyWithImpl<$Res>
     Object? customerEmail = null,
     Object? orderDescription = null,
     Object? sdkToken = null,
-    Object? customerIp = freezed,
+    // Object? customerIp = freezed,
     Object? currency = null,
     Object? language = null,
     Object? merchantReference = null,
-    Object? tokenName = freezed,
-    Object? paymentOption = freezed,
+    // Object? tokenName = freezed,
+    // Object? paymentOption = freezed,
     Object? eci = freezed,
-    Object? phoneNumber = freezed,
+    // Object? phoneNumber = freezed,
     Object? merchantExtra1 = freezed,
   }) {
     return _then(_$_FortRequest(
@@ -281,10 +281,10 @@ class __$$_FortRequestCopyWithImpl<$Res>
           ? _value.sdkToken
           : sdkToken // ignore: cast_nullable_to_non_nullable
               as String,
-      customerIp: freezed == customerIp
-          ? _value.customerIp
-          : customerIp // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // customerIp: freezed == customerIp
+      //     ? _value.customerIp
+      //     : customerIp // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       currency: null == currency
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
@@ -297,22 +297,22 @@ class __$$_FortRequestCopyWithImpl<$Res>
           ? _value.merchantReference
           : merchantReference // ignore: cast_nullable_to_non_nullable
               as String,
-      tokenName: freezed == tokenName
-          ? _value.tokenName
-          : tokenName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      paymentOption: freezed == paymentOption
-          ? _value.paymentOption
-          : paymentOption // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // tokenName: freezed == tokenName
+      //     ? _value.tokenName
+      //     : tokenName // ignore: cast_nullable_to_non_nullable
+      //         as String?,
+      // paymentOption: freezed == paymentOption
+      //     ? _value.paymentOption
+      //     : paymentOption // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       eci: freezed == eci
           ? _value.eci
           : eci // ignore: cast_nullable_to_non_nullable
               as String?,
-      phoneNumber: freezed == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // phoneNumber: freezed == phoneNumber
+      //     ? _value.phoneNumber
+      //     : phoneNumber // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       merchantExtra1: freezed == merchantExtra1
           ? _value.merchantExtra1
           : merchantExtra1 // ignore: cast_nullable_to_non_nullable
@@ -330,14 +330,14 @@ class _$_FortRequest extends _FortRequest {
       @JsonKey(name: 'customer_email') required this.customerEmail,
       @JsonKey(name: 'order_description') required this.orderDescription,
       @JsonKey(name: 'sdk_token') required this.sdkToken,
-      @JsonKey(name: 'customer_ip') this.customerIp,
+      // @JsonKey(name: 'customer_ip') this.customerIp,
       this.currency = 'USD',
       this.language = 'en',
       @JsonKey(name: 'merchant_reference') required this.merchantReference,
-      @JsonKey(name: 'token_name') this.tokenName,
-      @JsonKey(name: 'payment_option') this.paymentOption,
+      // @JsonKey(name: 'token_name') this.tokenName,
+      // @JsonKey(name: 'payment_option') this.paymentOption,
       this.eci,
-      @JsonKey(name: 'phone_number') this.phoneNumber,
+      // @JsonKey(name: 'phone_number') this.phoneNumber,
       @JsonKey(name: 'merchant_extra1') this.merchantExtra1})
       : super._();
 
@@ -379,9 +379,9 @@ class _$_FortRequest extends _FortRequest {
   /// It’s Mandatory, if the fraud service is active.
   /// We support IPv4 and IPv6 as shown in the example below.
   ///
-  @override
-  @JsonKey(name: 'customer_ip')
-  final String? customerIp;
+  // @override
+  // @JsonKey(name: 'customer_ip')
+  // final String? customerIp;
 
   /// The currency of the transaction’s amount in ISO code 3. Example: AED, USD, EUR, GBP.
   /// By Default currency : [USD].
@@ -405,15 +405,15 @@ class _$_FortRequest extends _FortRequest {
 
   /// The Token received from the Tokenization process..
   ///
-  @override
-  @JsonKey(name: 'token_name')
-  final String? tokenName;
+  // @override
+  // @JsonKey(name: 'token_name')
+  // final String? tokenName;
 
   /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
   ///
-  @override
-  @JsonKey(name: 'payment_option')
-  final String? paymentOption;
+  // @override
+  // @JsonKey(name: 'payment_option')
+  // final String? paymentOption;
 
   /// The E-commerce indicator. example: [ECOMMERCE]
   ///
@@ -422,9 +422,9 @@ class _$_FortRequest extends _FortRequest {
 
   /// The customer’s phone number.
   ///
-  @override
-  @JsonKey(name: 'phone_number')
-  final String? phoneNumber;
+  // @override
+  // @JsonKey(name: 'phone_number')
+  // final String? phoneNumber;
 
   /// Booking Data.
   ///
@@ -433,15 +433,15 @@ class _$_FortRequest extends _FortRequest {
   final String? merchantExtra1;
   @override
   String toString() {
-    String customerIpString =
-        customerIp != null ? ', customerIp: $customerIp' : '';
-    String paymentOptionString =
-        paymentOption != null ? ', paymentOption: $paymentOption' : '';
-    String tokenNameString = tokenName != null ? ', tokenName: $tokenName' : '';
-    String phoneNumberString =
-        phoneNumber != null ? ', phoneNumber: $phoneNumber' : '';
+    // String customerIpString =
+    //     customerIp != null ? ', customerIp: $customerIp' : '';
+    // String paymentOptionString =
+    //     paymentOption != null ? ', paymentOption: $paymentOption' : '';
+    // String tokenNameString = tokenName != null ? ', tokenName: $tokenName' : '';
+    // String phoneNumberString =
+    //     phoneNumber != null ? ', phoneNumber: $phoneNumber' : '';
 
-    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken , currency: $currency, language: $language, merchantReference: $merchantReference,  eci: $eci , merchant_extra1: $merchantExtra1$customerIpString$paymentOptionString$tokenNameString$phoneNumberString)';
+    return 'FortRequest(amount: $amount, customerName: $customerName, customerEmail: $customerEmail, orderDescription: $orderDescription, sdkToken: $sdkToken , currency: $currency, language: $language, merchantReference: $merchantReference,  eci: $eci , merchant_extra1: $merchantExtra1)';
   }
 
   @override
@@ -458,21 +458,13 @@ class _$_FortRequest extends _FortRequest {
                 other.orderDescription == orderDescription) &&
             (identical(other.sdkToken, sdkToken) ||
                 other.sdkToken == sdkToken) &&
-            (identical(other.customerIp, customerIp) ||
-                other.customerIp == customerIp) &&
             (identical(other.currency, currency) ||
                 other.currency == currency) &&
             (identical(other.language, language) ||
                 other.language == language) &&
             (identical(other.merchantReference, merchantReference) ||
                 other.merchantReference == merchantReference) &&
-            (identical(other.tokenName, tokenName) ||
-                other.tokenName == tokenName) &&
-            (identical(other.paymentOption, paymentOption) ||
-                other.paymentOption == paymentOption) &&
             (identical(other.eci, eci) || other.eci == eci) &&
-            (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber) &&
             (identical(other.merchantExtra1, merchantExtra1) ||
                 other.merchantExtra1 == merchantExtra1));
   }
@@ -486,14 +478,14 @@ class _$_FortRequest extends _FortRequest {
       customerEmail,
       orderDescription,
       sdkToken,
-      customerIp,
+      // customerIp,
       currency,
       language,
       merchantReference,
-      tokenName,
-      paymentOption,
+      // tokenName,
+      // paymentOption,
       eci,
-      phoneNumber,
+      // phoneNumber,
       merchantExtra1);
 
   @JsonKey(ignore: true)
@@ -518,15 +510,15 @@ abstract class _FortRequest extends FortRequest {
           @JsonKey(name: 'order_description')
           required final String orderDescription,
           @JsonKey(name: 'sdk_token') required final String sdkToken,
-          @JsonKey(name: 'customer_ip') final String? customerIp,
+          // @JsonKey(name: 'customer_ip') final String? customerIp,
           final String currency,
           final String language,
           @JsonKey(name: 'merchant_reference')
           required final String merchantReference,
-          @JsonKey(name: 'token_name') final String? tokenName,
-          @JsonKey(name: 'payment_option') final String? paymentOption,
+          // @JsonKey(name: 'token_name') final String? tokenName,
+          // @JsonKey(name: 'payment_option') final String? paymentOption,
           final String? eci,
-          @JsonKey(name: 'phone_number') final String? phoneNumber,
+          // @JsonKey(name: 'phone_number') final String? phoneNumber,
           @JsonKey(name: 'merchant_extra1') final String? merchantExtra1}) =
       _$_FortRequest;
   const _FortRequest._() : super._();
@@ -565,14 +557,14 @@ abstract class _FortRequest extends FortRequest {
   ///
   @JsonKey(name: 'sdk_token')
   String get sdkToken;
-  @override
+  // @override
 
-  /// It holds the customer’s IP address.
-  /// It’s Mandatory, if the fraud service is active.
-  /// We support IPv4 and IPv6 as shown in the example below.
-  ///
-  @JsonKey(name: 'customer_ip')
-  String? get customerIp;
+  // /// It holds the customer’s IP address.
+  // /// It’s Mandatory, if the fraud service is active.
+  // /// We support IPv4 and IPv6 as shown in the example below.
+  // ///
+  // @JsonKey(name: 'customer_ip')
+  // String? get customerIp;
   @override
 
   /// The currency of the transaction’s amount in ISO code 3. Example: AED, USD, EUR, GBP.
@@ -591,29 +583,29 @@ abstract class _FortRequest extends FortRequest {
   ///
   @JsonKey(name: 'merchant_reference')
   String get merchantReference;
-  @override
+  // @override
 
-  /// The Token received from the Tokenization process..
-  ///
-  @JsonKey(name: 'token_name')
-  String? get tokenName;
-  @override
+  // /// The Token received from the Tokenization process..
+  // ///
+  // @JsonKey(name: 'token_name')
+  // String? get tokenName;
+  // @override
 
-  /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
-  ///
-  @JsonKey(name: 'payment_option')
-  String? get paymentOption;
+  // /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
+  // ///
+  // @JsonKey(name: 'payment_option')
+  // String? get paymentOption;
   @override
 
   /// The E-commerce indicator. example: [ECOMMERCE]
   ///
   String? get eci;
-  @override
+  // @override
 
-  /// The customer’s phone number.
-  ///
-  @JsonKey(name: 'phone_number')
-  String? get phoneNumber;
+  // /// The customer’s phone number.
+  // ///
+  // @JsonKey(name: 'phone_number')
+  // String? get phoneNumber;
   @override
 
   /// Booking Data.

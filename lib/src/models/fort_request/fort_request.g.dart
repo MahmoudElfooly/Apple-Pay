@@ -13,14 +13,14 @@ _$_FortRequest _$$_FortRequestFromJson(Map<String, dynamic> json) =>
       customerEmail: json['customer_email'] as String,
       orderDescription: json['order_description'] as String,
       sdkToken: json['sdk_token'] as String,
-      customerIp: json['customer_ip'] as String?,
+      // customerIp: json['customer_ip'] as String?,
       currency: json['currency'] as String? ?? 'USD',
       language: json['language'] as String? ?? 'en',
       merchantReference: json['merchant_reference'] as String,
-      tokenName: json['token_name'] as String?,
-      paymentOption: json['payment_option'] as String?,
+      // tokenName: json['token_name'] as String?,
+      // paymentOption: json['payment_option'] as String?,
       eci: json['eci'] as String?,
-      phoneNumber: json['phone_number'] as String?,
+      // phoneNumber: json['phone_number'] as String?,
       merchantExtra1: json['merchant_extra1'] as String?,
     );
 
@@ -31,14 +31,14 @@ Map<String, dynamic> _$$_FortRequestToJson(_$_FortRequest instance) =>
       'customer_email': instance.customerEmail,
       'order_description': instance.orderDescription,
       'sdk_token': instance.sdkToken,
-      if (instance.customerIp != null) 'customer_ip': instance.customerIp,
+      // if (instance.customerIp != null) 'customer_ip': instance.customerIp,
       'currency': instance.currency,
       'language': instance.language,
       'merchant_reference': instance.merchantReference,
-      if (instance.tokenName != null) 'token_name': instance.tokenName,
-      if (instance.paymentOption != null)
-        'payment_option': instance.paymentOption,
+      // if (instance.tokenName != null) 'token_name': instance.tokenName,
+      // if (instance.paymentOption != null)
+      //   'payment_option': instance.paymentOption,
       'eci': instance.eci,
-      if (instance.phoneNumber != null) 'phone_number': instance.phoneNumber,
+      // if (instance.phoneNumber != null) 'phone_number': instance.phoneNumber,
       'merchant_extra1': instance.merchantExtra1,
     };

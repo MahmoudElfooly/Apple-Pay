@@ -49,11 +49,11 @@ class PayFortResult with _$PayFortResult {
 
     /// The Token received from the Tokenization process.
     ///
-    @JsonKey(name: 'token_name') String? tokenName,
+    // @JsonKey(name: 'token_name') String? tokenName,
 
     /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
     ///
-    @JsonKey(name: 'payment_option') String? paymentOption,
+    // @JsonKey(name: 'payment_option') String? paymentOption,
 
     /// The E-commerce indicator.
     ///
@@ -69,7 +69,7 @@ class PayFortResult with _$PayFortResult {
 
     /// It holds the customer’s IP address.
     ///
-    @JsonKey(name: 'customer_ip') String? customerIp,
+    // @JsonKey(name: 'customer_ip') String? customerIp,
 
     /// The customer’s name.
     ///
@@ -89,7 +89,7 @@ class PayFortResult with _$PayFortResult {
 
     /// The customer’s phone number.
     ///
-    String? phoneNumber,
+    // String? phoneNumber,
   }) = _PayFortResult;
 
   factory PayFortResult.fromJson(Map<String, dynamic> json) =>

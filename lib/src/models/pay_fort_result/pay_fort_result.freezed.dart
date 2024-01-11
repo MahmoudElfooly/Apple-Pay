@@ -67,13 +67,13 @@ mixin _$PayFortResult {
 
   /// The Token received from the Tokenization process.
   ///
-  @JsonKey(name: 'token_name')
-  String? get tokenName => throw _privateConstructorUsedError;
+  // @JsonKey(name: 'token_name')
+  // String? get tokenName => throw _privateConstructorUsedError;
 
   /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
   ///
-  @JsonKey(name: 'payment_option')
-  String? get paymentOption => throw _privateConstructorUsedError;
+  // @JsonKey(name: 'payment_option')
+  // String? get paymentOption => throw _privateConstructorUsedError;
 
   /// The E-commerce indicator.
   ///
@@ -91,8 +91,8 @@ mixin _$PayFortResult {
 
   /// It holds the customer’s IP address.
   ///
-  @JsonKey(name: 'customer_ip')
-  String? get customerIp => throw _privateConstructorUsedError;
+  // @JsonKey(name: 'customer_ip')
+  // String? get customerIp => throw _privateConstructorUsedError;
 
   /// The customer’s name.
   ///
@@ -115,7 +115,7 @@ mixin _$PayFortResult {
 
   /// The customer’s phone number.
   ///
-  String? get phoneNumber => throw _privateConstructorUsedError;
+  // String? get phoneNumber => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -129,27 +129,28 @@ abstract class $PayFortResultCopyWith<$Res> {
           PayFortResult value, $Res Function(PayFortResult) then) =
       _$PayFortResultCopyWithImpl<$Res, PayFortResult>;
   @useResult
-  $Res call(
-      {@JsonKey(name: 'response_code') String? responseCode,
-      @JsonKey(name: 'response_message') String? responseMessage,
-      String? command,
-      @JsonKey(name: 'merchant_reference') String? merchantReference,
-      String? amount,
-      String? currency,
-      @JsonKey(name: 'fort_id') String? fortId,
-      @JsonKey(name: 'customer_email') String? customerEmail,
-      @JsonKey(name: 'sdk_token') String? sdkToken,
-      @JsonKey(name: 'token_name') String? tokenName,
-      @JsonKey(name: 'payment_option') String? paymentOption,
-      String? eci,
-      @JsonKey(name: 'authorization_code') String? authorizationCode,
-      @JsonKey(name: 'order_description') String? orderDescription,
-      @JsonKey(name: 'customer_ip') String? customerIp,
-      @JsonKey(name: 'customer_name') String? customerName,
-      @JsonKey(name: 'expiry_date') String? expiryDate,
-      @JsonKey(name: 'card_number') String? cardNumber,
-      String? status,
-      String? phoneNumber});
+  $Res call({
+    @JsonKey(name: 'response_code') String? responseCode,
+    @JsonKey(name: 'response_message') String? responseMessage,
+    String? command,
+    @JsonKey(name: 'merchant_reference') String? merchantReference,
+    String? amount,
+    String? currency,
+    @JsonKey(name: 'fort_id') String? fortId,
+    @JsonKey(name: 'customer_email') String? customerEmail,
+    @JsonKey(name: 'sdk_token') String? sdkToken,
+    // @JsonKey(name: 'token_name') String? tokenName,
+    // @JsonKey(name: 'payment_option') String? paymentOption,
+    String? eci,
+    @JsonKey(name: 'authorization_code') String? authorizationCode,
+    @JsonKey(name: 'order_description') String? orderDescription,
+    // @JsonKey(name: 'customer_ip') String? customerIp,
+    @JsonKey(name: 'customer_name') String? customerName,
+    @JsonKey(name: 'expiry_date') String? expiryDate,
+    @JsonKey(name: 'card_number') String? cardNumber,
+    String? status,
+    // String? phoneNumber
+  });
 }
 
 /// @nodoc
@@ -174,17 +175,17 @@ class _$PayFortResultCopyWithImpl<$Res, $Val extends PayFortResult>
     Object? fortId = freezed,
     Object? customerEmail = freezed,
     Object? sdkToken = freezed,
-    Object? tokenName = freezed,
-    Object? paymentOption = freezed,
+    // Object? tokenName = freezed,
+    // Object? paymentOption = freezed,
     Object? eci = freezed,
     Object? authorizationCode = freezed,
     Object? orderDescription = freezed,
-    Object? customerIp = freezed,
+    // Object? customerIp = freezed,
     Object? customerName = freezed,
     Object? expiryDate = freezed,
     Object? cardNumber = freezed,
     Object? status = freezed,
-    Object? phoneNumber = freezed,
+    // Object? phoneNumber = freezed,
   }) {
     return _then(_value.copyWith(
       responseCode: freezed == responseCode
@@ -223,14 +224,14 @@ class _$PayFortResultCopyWithImpl<$Res, $Val extends PayFortResult>
           ? _value.sdkToken
           : sdkToken // ignore: cast_nullable_to_non_nullable
               as String?,
-      tokenName: freezed == tokenName
-          ? _value.tokenName
-          : tokenName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      paymentOption: freezed == paymentOption
-          ? _value.paymentOption
-          : paymentOption // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // tokenName: freezed == tokenName
+      //     ? _value.tokenName
+      //     : tokenName // ignore: cast_nullable_to_non_nullable
+      //         as String?,
+      // paymentOption: freezed == paymentOption
+      //     ? _value.paymentOption
+      //     : paymentOption // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       eci: freezed == eci
           ? _value.eci
           : eci // ignore: cast_nullable_to_non_nullable
@@ -243,10 +244,10 @@ class _$PayFortResultCopyWithImpl<$Res, $Val extends PayFortResult>
           ? _value.orderDescription
           : orderDescription // ignore: cast_nullable_to_non_nullable
               as String?,
-      customerIp: freezed == customerIp
-          ? _value.customerIp
-          : customerIp // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // customerIp: freezed == customerIp
+      //     ? _value.customerIp
+      //     : customerIp // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       customerName: freezed == customerName
           ? _value.customerName
           : customerName // ignore: cast_nullable_to_non_nullable
@@ -263,10 +264,10 @@ class _$PayFortResultCopyWithImpl<$Res, $Val extends PayFortResult>
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      phoneNumber: freezed == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // phoneNumber: freezed == phoneNumber
+      //     ? _value.phoneNumber
+      //     : phoneNumber // ignore: cast_nullable_to_non_nullable
+      //         as String?,
     ) as $Val);
   }
 }
@@ -289,17 +290,18 @@ abstract class _$$_PayFortResultCopyWith<$Res>
       @JsonKey(name: 'fort_id') String? fortId,
       @JsonKey(name: 'customer_email') String? customerEmail,
       @JsonKey(name: 'sdk_token') String? sdkToken,
-      @JsonKey(name: 'token_name') String? tokenName,
-      @JsonKey(name: 'payment_option') String? paymentOption,
+      // @JsonKey(name: 'token_name') String? tokenName,
+      // @JsonKey(name: 'payment_option') String? paymentOption,
       String? eci,
       @JsonKey(name: 'authorization_code') String? authorizationCode,
       @JsonKey(name: 'order_description') String? orderDescription,
-      @JsonKey(name: 'customer_ip') String? customerIp,
+      // @JsonKey(name: 'customer_ip') String? customerIp,
       @JsonKey(name: 'customer_name') String? customerName,
       @JsonKey(name: 'expiry_date') String? expiryDate,
       @JsonKey(name: 'card_number') String? cardNumber,
       String? status,
-      String? phoneNumber});
+      // String? phoneNumber
+      });
 }
 
 /// @nodoc
@@ -322,17 +324,17 @@ class __$$_PayFortResultCopyWithImpl<$Res>
     Object? fortId = freezed,
     Object? customerEmail = freezed,
     Object? sdkToken = freezed,
-    Object? tokenName = freezed,
-    Object? paymentOption = freezed,
+    // Object? tokenName = freezed,
+    // Object? paymentOption = freezed,
     Object? eci = freezed,
     Object? authorizationCode = freezed,
     Object? orderDescription = freezed,
-    Object? customerIp = freezed,
+    // Object? customerIp = freezed,
     Object? customerName = freezed,
     Object? expiryDate = freezed,
     Object? cardNumber = freezed,
     Object? status = freezed,
-    Object? phoneNumber = freezed,
+    // Object? phoneNumber = freezed,
   }) {
     return _then(_$_PayFortResult(
       responseCode: freezed == responseCode
@@ -371,14 +373,14 @@ class __$$_PayFortResultCopyWithImpl<$Res>
           ? _value.sdkToken
           : sdkToken // ignore: cast_nullable_to_non_nullable
               as String?,
-      tokenName: freezed == tokenName
-          ? _value.tokenName
-          : tokenName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      paymentOption: freezed == paymentOption
-          ? _value.paymentOption
-          : paymentOption // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // tokenName: freezed == tokenName
+      //     ? _value.tokenName
+      //     : tokenName // ignore: cast_nullable_to_non_nullable
+      //         as String?,
+      // paymentOption: freezed == paymentOption
+      //     ? _value.paymentOption
+      //     : paymentOption // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       eci: freezed == eci
           ? _value.eci
           : eci // ignore: cast_nullable_to_non_nullable
@@ -391,10 +393,10 @@ class __$$_PayFortResultCopyWithImpl<$Res>
           ? _value.orderDescription
           : orderDescription // ignore: cast_nullable_to_non_nullable
               as String?,
-      customerIp: freezed == customerIp
-          ? _value.customerIp
-          : customerIp // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // customerIp: freezed == customerIp
+      //     ? _value.customerIp
+      //     : customerIp // ignore: cast_nullable_to_non_nullable
+      //         as String?,
       customerName: freezed == customerName
           ? _value.customerName
           : customerName // ignore: cast_nullable_to_non_nullable
@@ -411,10 +413,10 @@ class __$$_PayFortResultCopyWithImpl<$Res>
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      phoneNumber: freezed == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String?,
+      // phoneNumber: freezed == phoneNumber
+      //     ? _value.phoneNumber
+      //     : phoneNumber // ignore: cast_nullable_to_non_nullable
+      //         as String?,
     ));
   }
 }
@@ -422,28 +424,28 @@ class __$$_PayFortResultCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_PayFortResult extends _PayFortResult {
-  const _$_PayFortResult(
-      {@JsonKey(name: 'response_code') this.responseCode,
-      @JsonKey(name: 'response_message') this.responseMessage,
-      this.command,
-      @JsonKey(name: 'merchant_reference') this.merchantReference,
-      this.amount,
-      this.currency,
-      @JsonKey(name: 'fort_id') this.fortId,
-      @JsonKey(name: 'customer_email') this.customerEmail,
-      @JsonKey(name: 'sdk_token') this.sdkToken,
-      @JsonKey(name: 'token_name') this.tokenName,
-      @JsonKey(name: 'payment_option') this.paymentOption,
-      this.eci,
-      @JsonKey(name: 'authorization_code') this.authorizationCode,
-      @JsonKey(name: 'order_description') this.orderDescription,
-      @JsonKey(name: 'customer_ip') this.customerIp,
-      @JsonKey(name: 'customer_name') this.customerName,
-      @JsonKey(name: 'expiry_date') this.expiryDate,
-      @JsonKey(name: 'card_number') this.cardNumber,
-      this.status,
-      this.phoneNumber})
-      : super._();
+  const _$_PayFortResult({
+    @JsonKey(name: 'response_code') this.responseCode,
+    @JsonKey(name: 'response_message') this.responseMessage,
+    this.command,
+    @JsonKey(name: 'merchant_reference') this.merchantReference,
+    this.amount,
+    this.currency,
+    @JsonKey(name: 'fort_id') this.fortId,
+    @JsonKey(name: 'customer_email') this.customerEmail,
+    @JsonKey(name: 'sdk_token') this.sdkToken,
+    // @JsonKey(name: 'token_name') this.tokenName,
+    // @JsonKey(name: 'payment_option') this.paymentOption,
+    this.eci,
+    @JsonKey(name: 'authorization_code') this.authorizationCode,
+    @JsonKey(name: 'order_description') this.orderDescription,
+    // @JsonKey(name: 'customer_ip') this.customerIp,
+    @JsonKey(name: 'customer_name') this.customerName,
+    @JsonKey(name: 'expiry_date') this.expiryDate,
+    @JsonKey(name: 'card_number') this.cardNumber,
+    this.status,
+    // this.phoneNumber
+  }) : super._();
 
   factory _$_PayFortResult.fromJson(Map<String, dynamic> json) =>
       _$$_PayFortResultFromJson(json);
@@ -504,15 +506,15 @@ class _$_PayFortResult extends _PayFortResult {
 
   /// The Token received from the Tokenization process.
   ///
-  @override
-  @JsonKey(name: 'token_name')
-  final String? tokenName;
+  // @override
+  // @JsonKey(name: 'token_name')
+  // final String? tokenName;
 
   /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
   ///
-  @override
-  @JsonKey(name: 'payment_option')
-  final String? paymentOption;
+  // @override
+  // @JsonKey(name: 'payment_option')
+  // final String? paymentOption;
 
   /// The E-commerce indicator.
   ///
@@ -533,9 +535,9 @@ class _$_PayFortResult extends _PayFortResult {
 
   /// It holds the customer’s IP address.
   ///
-  @override
-  @JsonKey(name: 'customer_ip')
-  final String? customerIp;
+  // @override
+  // @JsonKey(name: 'customer_ip')
+  // final String? customerIp;
 
   /// The customer’s name.
   ///
@@ -562,12 +564,12 @@ class _$_PayFortResult extends _PayFortResult {
 
   /// The customer’s phone number.
   ///
-  @override
-  final String? phoneNumber;
+  // @override
+  // final String? phoneNumber;
 
   @override
   String toString() {
-    return 'PayFortResult(responseCode: $responseCode, responseMessage: $responseMessage, command: $command, merchantReference: $merchantReference, amount: $amount, currency: $currency, fortId: $fortId, customerEmail: $customerEmail, sdkToken: $sdkToken, tokenName: $tokenName, paymentOption: $paymentOption, eci: $eci, authorizationCode: $authorizationCode, orderDescription: $orderDescription, customerIp: $customerIp, customerName: $customerName, expiryDate: $expiryDate, cardNumber: $cardNumber, status: $status, phoneNumber: $phoneNumber)';
+    return 'PayFortResult(responseCode: $responseCode, responseMessage: $responseMessage, command: $command, merchantReference: $merchantReference, amount: $amount, currency: $currency, fortId: $fortId, customerEmail: $customerEmail, sdkToken: $sdkToken, eci: $eci, authorizationCode: $authorizationCode, orderDescription: $orderDescription, customerName: $customerName, expiryDate: $expiryDate, cardNumber: $cardNumber, status: $status, )';
   }
 
   @override
@@ -589,27 +591,19 @@ class _$_PayFortResult extends _PayFortResult {
             (identical(other.customerEmail, customerEmail) ||
                 other.customerEmail == customerEmail) &&
             (identical(other.sdkToken, sdkToken) ||
-                other.sdkToken == sdkToken) &&
-            (identical(other.tokenName, tokenName) ||
-                other.tokenName == tokenName) &&
-            (identical(other.paymentOption, paymentOption) ||
-                other.paymentOption == paymentOption) &&
+                other.sdkToken == sdkToken)  &&
             (identical(other.eci, eci) || other.eci == eci) &&
             (identical(other.authorizationCode, authorizationCode) ||
                 other.authorizationCode == authorizationCode) &&
             (identical(other.orderDescription, orderDescription) ||
-                other.orderDescription == orderDescription) &&
-            (identical(other.customerIp, customerIp) ||
-                other.customerIp == customerIp) &&
+                other.orderDescription == orderDescription)  &&
             (identical(other.customerName, customerName) ||
                 other.customerName == customerName) &&
             (identical(other.expiryDate, expiryDate) ||
                 other.expiryDate == expiryDate) &&
             (identical(other.cardNumber, cardNumber) ||
                 other.cardNumber == cardNumber) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber));
+            (identical(other.status, status) || other.status == status) ));
   }
 
   @JsonKey(ignore: true)
@@ -625,17 +619,17 @@ class _$_PayFortResult extends _PayFortResult {
         fortId,
         customerEmail,
         sdkToken,
-        tokenName,
-        paymentOption,
+        // tokenName,
+        // paymentOption,
         eci,
         authorizationCode,
         orderDescription,
-        customerIp,
+        // customerIp,
         customerName,
         expiryDate,
         cardNumber,
         status,
-        phoneNumber
+        // phoneNumber
       ]);
 
   @JsonKey(ignore: true)
@@ -663,17 +657,18 @@ abstract class _PayFortResult extends PayFortResult {
       @JsonKey(name: 'fort_id') final String? fortId,
       @JsonKey(name: 'customer_email') final String? customerEmail,
       @JsonKey(name: 'sdk_token') final String? sdkToken,
-      @JsonKey(name: 'token_name') final String? tokenName,
-      @JsonKey(name: 'payment_option') final String? paymentOption,
+      // @JsonKey(name: 'token_name') final String? tokenName,
+      // @JsonKey(name: 'payment_option') final String? paymentOption,
       final String? eci,
       @JsonKey(name: 'authorization_code') final String? authorizationCode,
       @JsonKey(name: 'order_description') final String? orderDescription,
-      @JsonKey(name: 'customer_ip') final String? customerIp,
+      // @JsonKey(name: 'customer_ip') final String? customerIp,
       @JsonKey(name: 'customer_name') final String? customerName,
       @JsonKey(name: 'expiry_date') final String? expiryDate,
       @JsonKey(name: 'card_number') final String? cardNumber,
       final String? status,
-      final String? phoneNumber}) = _$_PayFortResult;
+      // final String? phoneNumber
+      }) = _$_PayFortResult;
   const _PayFortResult._() : super._();
 
   factory _PayFortResult.fromJson(Map<String, dynamic> json) =
@@ -733,18 +728,18 @@ abstract class _PayFortResult extends PayFortResult {
   ///
   @JsonKey(name: 'sdk_token')
   String? get sdkToken;
-  @override
+  // @override
 
-  /// The Token received from the Tokenization process.
-  ///
-  @JsonKey(name: 'token_name')
-  String? get tokenName;
-  @override
+  // /// The Token received from the Tokenization process.
+  // ///
+  // @JsonKey(name: 'token_name')
+  // String? get tokenName;
+  // @override
 
-  /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
-  ///
-  @JsonKey(name: 'payment_option')
-  String? get paymentOption;
+  // /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
+  // ///
+  // @JsonKey(name: 'payment_option')
+  // String? get paymentOption;
   @override
 
   /// The E-commerce indicator.
@@ -762,12 +757,12 @@ abstract class _PayFortResult extends PayFortResult {
   ///
   @JsonKey(name: 'order_description')
   String? get orderDescription;
-  @override
+  // @override
 
-  /// It holds the customer’s IP address.
-  ///
-  @JsonKey(name: 'customer_ip')
-  String? get customerIp;
+  // /// It holds the customer’s IP address.
+  // ///
+  // @JsonKey(name: 'customer_ip')
+  // String? get customerIp;
   @override
 
   /// The customer’s name.
@@ -791,11 +786,11 @@ abstract class _PayFortResult extends PayFortResult {
   /// A two-digit numeric value that indicates the status of the transaction.
   ///
   String? get status;
-  @override
+  // @override
 
-  /// The customer’s phone number.
-  ///
-  String? get phoneNumber;
+  // /// The customer’s phone number.
+  // ///
+  // String? get phoneNumber;
   @override
   @JsonKey(ignore: true)
   _$$_PayFortResultCopyWith<_$_PayFortResult> get copyWith =>

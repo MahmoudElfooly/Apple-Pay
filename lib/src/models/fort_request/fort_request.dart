@@ -34,7 +34,7 @@ class FortRequest with _$FortRequest {
     /// It’s Mandatory, if the fraud service is active.
     /// We support IPv4 and IPv6 as shown in the example below.
     ///
-    @JsonKey(name: 'customer_ip') String? customerIp,
+    // @JsonKey(name: 'customer_ip') String? //,
 
     /// The currency of the transaction’s amount in ISO code 3. Example: AED, USD, EUR, GBP.
     /// By Default currency : [USD].
@@ -52,11 +52,11 @@ class FortRequest with _$FortRequest {
 
     /// The Token received from the Tokenization process..
     ///
-    @JsonKey(name: 'token_name') String? tokenName,
+    // @JsonKey(name: 'token_name') String? //,
 
     /// Payment option. [MASTERCARD], [VISA], [AMEX] etc...
     ///
-    @JsonKey(name: 'payment_option') String? paymentOption,
+    // @JsonKey(name: 'payment_option') String? paymentOption,
 
     /// The E-commerce indicator. example: [ECOMMERCE]
     ///
@@ -64,7 +64,7 @@ class FortRequest with _$FortRequest {
 
     /// The customer’s phone number.
     ///
-    @JsonKey(name: 'phone_number') String? phoneNumber,
+    // @JsonKey(name: 'phone_number') String? phoneNumber,
 
     /// Booking Data
     @JsonKey(name: 'merchant_extra1') required String merchantExtra1,
