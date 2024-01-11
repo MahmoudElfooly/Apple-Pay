@@ -280,28 +280,28 @@ abstract class _$$_PayFortResultCopyWith<$Res>
       __$$_PayFortResultCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {@JsonKey(name: 'response_code') String? responseCode,
-      @JsonKey(name: 'response_message') String? responseMessage,
-      String? command,
-      @JsonKey(name: 'merchant_reference') String? merchantReference,
-      String? amount,
-      String? currency,
-      @JsonKey(name: 'fort_id') String? fortId,
-      @JsonKey(name: 'customer_email') String? customerEmail,
-      @JsonKey(name: 'sdk_token') String? sdkToken,
-      // @JsonKey(name: 'token_name') String? tokenName,
-      // @JsonKey(name: 'payment_option') String? paymentOption,
-      String? eci,
-      @JsonKey(name: 'authorization_code') String? authorizationCode,
-      @JsonKey(name: 'order_description') String? orderDescription,
-      // @JsonKey(name: 'customer_ip') String? customerIp,
-      @JsonKey(name: 'customer_name') String? customerName,
-      @JsonKey(name: 'expiry_date') String? expiryDate,
-      @JsonKey(name: 'card_number') String? cardNumber,
-      String? status,
-      // String? phoneNumber
-      });
+  $Res call({
+    @JsonKey(name: 'response_code') String? responseCode,
+    @JsonKey(name: 'response_message') String? responseMessage,
+    String? command,
+    @JsonKey(name: 'merchant_reference') String? merchantReference,
+    String? amount,
+    String? currency,
+    @JsonKey(name: 'fort_id') String? fortId,
+    @JsonKey(name: 'customer_email') String? customerEmail,
+    @JsonKey(name: 'sdk_token') String? sdkToken,
+    // @JsonKey(name: 'token_name') String? tokenName,
+    // @JsonKey(name: 'payment_option') String? paymentOption,
+    String? eci,
+    @JsonKey(name: 'authorization_code') String? authorizationCode,
+    @JsonKey(name: 'order_description') String? orderDescription,
+    // @JsonKey(name: 'customer_ip') String? customerIp,
+    @JsonKey(name: 'customer_name') String? customerName,
+    @JsonKey(name: 'expiry_date') String? expiryDate,
+    @JsonKey(name: 'card_number') String? cardNumber,
+    String? status,
+    // String? phoneNumber
+  });
 }
 
 /// @nodoc
@@ -591,19 +591,19 @@ class _$_PayFortResult extends _PayFortResult {
             (identical(other.customerEmail, customerEmail) ||
                 other.customerEmail == customerEmail) &&
             (identical(other.sdkToken, sdkToken) ||
-                other.sdkToken == sdkToken)  &&
+                other.sdkToken == sdkToken) &&
             (identical(other.eci, eci) || other.eci == eci) &&
             (identical(other.authorizationCode, authorizationCode) ||
                 other.authorizationCode == authorizationCode) &&
             (identical(other.orderDescription, orderDescription) ||
-                other.orderDescription == orderDescription)  &&
+                other.orderDescription == orderDescription) &&
             (identical(other.customerName, customerName) ||
                 other.customerName == customerName) &&
             (identical(other.expiryDate, expiryDate) ||
                 other.expiryDate == expiryDate) &&
             (identical(other.cardNumber, cardNumber) ||
                 other.cardNumber == cardNumber) &&
-            (identical(other.status, status) || other.status == status) ));
+            (identical(other.status, status) || other.status == status));
   }
 
   @JsonKey(ignore: true)
@@ -647,28 +647,28 @@ class _$_PayFortResult extends _PayFortResult {
 }
 
 abstract class _PayFortResult extends PayFortResult {
-  const factory _PayFortResult(
-      {@JsonKey(name: 'response_code') final String? responseCode,
-      @JsonKey(name: 'response_message') final String? responseMessage,
-      final String? command,
-      @JsonKey(name: 'merchant_reference') final String? merchantReference,
-      final String? amount,
-      final String? currency,
-      @JsonKey(name: 'fort_id') final String? fortId,
-      @JsonKey(name: 'customer_email') final String? customerEmail,
-      @JsonKey(name: 'sdk_token') final String? sdkToken,
-      // @JsonKey(name: 'token_name') final String? tokenName,
-      // @JsonKey(name: 'payment_option') final String? paymentOption,
-      final String? eci,
-      @JsonKey(name: 'authorization_code') final String? authorizationCode,
-      @JsonKey(name: 'order_description') final String? orderDescription,
-      // @JsonKey(name: 'customer_ip') final String? customerIp,
-      @JsonKey(name: 'customer_name') final String? customerName,
-      @JsonKey(name: 'expiry_date') final String? expiryDate,
-      @JsonKey(name: 'card_number') final String? cardNumber,
-      final String? status,
-      // final String? phoneNumber
-      }) = _$_PayFortResult;
+  const factory _PayFortResult({
+    @JsonKey(name: 'response_code') final String? responseCode,
+    @JsonKey(name: 'response_message') final String? responseMessage,
+    final String? command,
+    @JsonKey(name: 'merchant_reference') final String? merchantReference,
+    final String? amount,
+    final String? currency,
+    @JsonKey(name: 'fort_id') final String? fortId,
+    @JsonKey(name: 'customer_email') final String? customerEmail,
+    @JsonKey(name: 'sdk_token') final String? sdkToken,
+    // @JsonKey(name: 'token_name') final String? tokenName,
+    // @JsonKey(name: 'payment_option') final String? paymentOption,
+    final String? eci,
+    @JsonKey(name: 'authorization_code') final String? authorizationCode,
+    @JsonKey(name: 'order_description') final String? orderDescription,
+    // @JsonKey(name: 'customer_ip') final String? customerIp,
+    @JsonKey(name: 'customer_name') final String? customerName,
+    @JsonKey(name: 'expiry_date') final String? expiryDate,
+    @JsonKey(name: 'card_number') final String? cardNumber,
+    final String? status,
+    // final String? phoneNumber
+  }) = _$_PayFortResult;
   const _PayFortResult._() : super._();
 
   factory _PayFortResult.fromJson(Map<String, dynamic> json) =
