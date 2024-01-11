@@ -45,11 +45,11 @@ public class PayFortDelegate: NSObject, PKPaymentAuthorizationViewControllerDele
         request["merchant_reference"] = (requestData["merchant_reference"] as? String) ?? "";
         request["order_description"] = (requestData["order_description"] as? String) ?? "";
         request["sdk_token"] = (requestData["sdk_token"] as? String) ?? "";
-        request["token_name"] = (requestData["token_name"] as? String) ?? "";
-        request["payment_option"] = (requestData["payment_option"] as? String) ?? "";
+        // request["token_name"] = (requestData["token_name"] as? String) ?? "";
+        // request["payment_option"] = (requestData["payment_option"] as? String) ?? "";
         request["eci"] = (requestData["eci"] as? String) ?? "";
-        request["customer_ip"] = (requestData["customer_ip"] as? String) ?? "";
-        request["phone_number"] = (requestData["phone_number"] as? String) ?? "";
+        // request["customer_ip"] = (requestData["customer_ip"] as? String) ?? "";
+        // request["phone_number"] = (requestData["phone_number"] as? String) ?? "";
         request["merchant_extra1"] = (requestData["merchant_extra1"] as? String) ?? "";
         payFort?.hideLoading = options?.hideLoading ?? false
         payFort?.presentAsDefault = options?.presentAsDefault ?? true
@@ -124,13 +124,13 @@ public class PayFortDelegate: NSObject, PKPaymentAuthorizationViewControllerDele
             request["language"] = (requestData?["language"] as? String) ?? "";
             request["customer_email"] = (requestData?["customer_email"] as? String) ?? "";
             request["sdk_token"] = (requestData?["sdk_token"] as? String) ?? "";
-            request["payment_option"] = (requestData?["payment_option"] as? String) ?? "";
+            // request["payment_option"] = (requestData?["payment_option"] as? String) ?? "";
             request["eci"] = (requestData?["eci"] as? String) ?? "";
             request["order_description"] = (requestData?["order_description"] as? String) ?? "";
-            request["customer_ip"] = (requestData?["customer_ip"] as? String) ?? "";
+            // request["customer_ip"] = (requestData?["customer_ip"] as? String) ?? "";
             request["customer_name"] = (requestData?["customer_name"] as? String) ?? "";
-            request["token_name"] = (requestData?["token_name"] as? String) ?? "";
-            request["phone_number"] = (requestData?["phone_number"] as? String) ?? "";
+            // request["token_name"] = (requestData?["token_name"] as? String) ?? "";
+            // request["phone_number"] = (requestData?["phone_number"] as? String) ?? "";
             request["merchant_extra1"] = (requestData?["merchant_extra1"] as? String) ?? "";
 
             payFort?.hideLoading = options?.hideLoading ?? false
