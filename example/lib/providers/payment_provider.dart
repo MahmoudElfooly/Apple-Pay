@@ -35,7 +35,7 @@ class PaymentProvider extends DefaultChangeNotifier {
         sdkToken: sdkTokenResponse?.sdkToken ?? '',
         merchantReference: const Uuid().v4(),
         currency: 'SAR',
-        customerIp: (await _info.getWifiIP() ?? ''),
+        // customerIp: (await _info.getWifiIP() ?? ''),
       );
 
       _payfort.callPayFort(
